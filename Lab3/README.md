@@ -3,7 +3,7 @@
 ### Задание
 Сделать управление морганием лампочек на клавиатуре используя sysfs
 
-### Ход работы
+### Текст программы
 
 - ##### sysleds.c
 
@@ -119,21 +119,27 @@ log:
 
 ### Тестирование программы
 1) echo 1 > led_settings
-   ![pic1](/screens/pic1.png)
-   ![gif1](/screens/1.gif)
-<br>
-2) echo 2 > led_settings
-   ![pic2](/screens/pic2.png)
-   ![gif2](/screens/2.gif)
-<br>
-3) echo 4 > led_settings
-   ![pic3](/screens/pic3.png)
-   ![gif3](/screens/4.gif)
-<br>
-4) echo 7 > led_settings
-   ![pic4](/screens/pic4.png)
-   ![gif4](/screens/all.gif)
 
-5) echo 10 > led_settings
-   ![pic5](/screens/pic5.png)
+   ![pic1](screens/pic1.png)
+   ![gif1](screens/1.gif)
+   
+3) echo 2 > led_settings
+
+   ![pic2](screens/pic2.png)
+   ![gif2](screens/2.gif)
+
+4) echo 4 > led_settings
+
+   ![pic3](screens/pic3.png)
+   ![gif3](screens/4.gif)
+
+5) echo 7 > led_settings
+
+   ![pic4](screens/pic4.png)
+   ![gif4](screens/all.gif)
+
+6) echo 10 > led_settings
+
+   ![pic5](screens/pic5.png)
+
 При значениях вне области $[1,7]$ на клавиатуре ничего не горит
